@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Геофизика_БД", "Геофизика_БД\Геофизика_БД.csproj", "{349BA29D-4241-49F5-AB6A-56C8D9C6D6AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{349BA29D-4241-49F5-AB6A-56C8D9C6D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349BA29D-4241-49F5-AB6A-56C8D9C6D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349BA29D-4241-49F5-AB6A-56C8D9C6D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349BA29D-4241-49F5-AB6A-56C8D9C6D6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15575B90-74FB-4472-8576-34783848A768}
+	EndGlobalSection
+EndGlobal

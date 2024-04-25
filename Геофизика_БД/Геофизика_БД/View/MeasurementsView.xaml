@@ -1,0 +1,58 @@
+﻿<Window x:Class="Геофизика_БД.View.MeasurementsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Геофизика_БД.View"
+        mc:Ignorable="d"
+        Title="MeasurementsView" Height="500" Width="800">
+    <Grid>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+            <!-- Остальной контент -->
+            <Grid Background="#D2B48C" Margin="0,0,0,10">
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" Width="800" Margin="0,20,0,20"><Run Language="ru-ru" Text="УПРАВЛЕНИЕ ИЗМЕРЕНИЯМИ"/></TextBlock>
+            </Grid>
+
+            <!-- Название земли -->
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <ComboBox x:Name="locationsComboBox" Width="279" Margin="10" />
+                <ComboBox x:Name="objectsComboBox" Width="270" Margin="10" SelectionChanged="ObjectsComboBox_SelectionChanged" />
+            </StackPanel>
+            <!-- Размещаем ComboBox на центре -->
+
+            <!-- Интерактивная карта -->
+            <!-- Добавьте элементы управления для отображения интерактивной карты -->
+        </StackPanel>
+        <StackPanel Margin="20,156,0,0" HorizontalAlignment="Left" Width="358" Height="236" VerticalAlignment="Top">
+            <Grid Width="371">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Дата:" FontSize="20" Margin="0,5"/>
+                <TextBox Grid.Column="1" x:Name="dateTextBox" Margin="10,5,200,5"/>
+                <TextBlock Grid.Column="1" Text="Время:" FontSize="20" Margin="139,5,125,5"/>
+                <TextBox Grid.Column="1" x:Name="timeTextBox" Margin="206,5,28,5"/>
+            </Grid>
+
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Button x:Name="OpenGeoElectricEditWindowButton" Content="Геоэлектрические разрезы" FontSize="20" Margin="0,20"  Width="351" Height="30" Click="OpenGeoElectricEditWindow"/>
+
+            <TextBlock Text="Напряжение:" FontSize="20" Height="25" Width="400"/>
+            <TextBox x:Name="voltageTextBox" Width="353"  Margin="0,5" Height="30"/>
+
+
+            <Button x:Name="EquipmentButton" Content="Оборудование" FontSize="20" Width="357" Margin="0,20" Click="EquipmentButton_Click"/>
+        </StackPanel>
+        <Button x:Name="AddMeasurementButton" Content="Добавить" FontSize="20"  Height="30" Click="AddMeasurementButton_Click" Margin="20,410,0,0" HorizontalAlignment="Left" Width="166" VerticalAlignment="Top"/>
+        <Button x:Name="SaveMeasurementButton" Content="Изменить"  FontSize="20" Height="30" Click="SaveMeasurementButton_Click" Margin="212,410,0,0" HorizontalAlignment="Left" Width="166" VerticalAlignment="Top" />
+    </Grid>
+</Window>

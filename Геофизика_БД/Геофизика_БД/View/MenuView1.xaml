@@ -1,0 +1,30 @@
+﻿<Window x:Class="Геофизика_БД.View.MenuView1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Геофизика_БД.View"
+        mc:Ignorable="d"
+        Title="HomeView" Height="450" Width="800" WindowStyle="SingleBorderWindow">
+
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Background="#D2B48C" Margin="0,0,0,30">
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="30"  Width="800" Margin="0,20,0,20"><Run Language="ru-ru" Text="МЕНЮ"/></TextBlock>
+        </Grid>
+        <Button Grid.Row="1" Content="Управление объектами исследования" Background="Transparent"  FontSize="16" Margin="20" BorderBrush="#8B4513" BorderThickness="2" Padding="15" Width="500" Click="ElementButton_Click"/>
+        <Button Grid.Row="2" Content="Управление измерениями" Background="Transparent" FontSize="16" Margin="20" BorderBrush="#8B4513" BorderThickness="2" Padding="15" Width="500" Click="ElementButton1_Click"/>
+        <Button Grid.Row="3" Content="Генереция отчетов" Background="Transparent" FontSize="16" Margin="20" BorderBrush="#8B4513" BorderThickness="2" Padding="15" Width="500" Click="ElementButton2_Click"/>
+
+
+    </Grid>
+</Window>
+
+
